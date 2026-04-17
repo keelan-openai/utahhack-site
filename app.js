@@ -72,6 +72,47 @@ const disciplineAssets = {
   },
 };
 
+const problemSuggestions = {
+  "Higher Education": [
+    "Helping students find the right campus resources faster",
+    "Reducing advisor email overload during registration",
+    "Making orientation information easier to navigate",
+    "Helping first-generation students understand next steps",
+  ],
+  Healthcare: [
+    "Helping patients understand follow-up instructions",
+    "Reducing intake confusion before appointments",
+    "Making clinic resources easier to find quickly",
+    "Helping care teams route non-urgent questions faster",
+  ],
+  Research: [
+    "Helping research teams summarize study updates faster",
+    "Reducing time spent finding the right protocol reference",
+    "Making research onboarding clearer for new lab members",
+    "Helping teams organize literature review insights",
+  ],
+  "Business Operations": [
+    "Reducing time spent answering repeated operations questions",
+    "Helping teams find the right internal process faster",
+    "Making approval workflows easier to navigate",
+    "Improving handoffs across operations teams",
+  ],
+  "Creative Media": [
+    "Creating better outreach for events",
+    "Helping teams turn ideas into better campaign briefs",
+    "Making content requests easier to scope clearly",
+    "Improving how creative teams organize feedback",
+  ],
+  "Community Services": [
+    "Helping people find the right support program faster",
+    "Making service eligibility easier to understand",
+    "Improving outreach to underserved community members",
+    "Helping volunteers route requests more effectively",
+  ],
+};
+
+const suggestionState = {};
+
 const toTitleCase = (value) =>
   value
     .trim()
@@ -136,6 +177,30 @@ const renderDebug = (debug) => {
   if (ideaDebugOutput) {
     ideaDebugOutput.textContent = debug?.output || "No generation yet.";
   }
+};
+
+const getRandomProblemSuggestion = (discipline) => {
+  const options = problemSuggestions[discipline] || problemSuggestions["Higher Education"];
+  const previousIndex = suggestionState[discipline];
+
+  if (options.length === 1) {
+    suggestionState[discipline] = 0;
+    return options[0];
+  }
+
+  let nextIndex = Math.floor(Math.random() * options.length);
+
+  while (nextIndex === previousIndex) {
+    nextIndex = Math.floor(Math.random() * options.length);
+  }
+
+  suggestionState[discipline] = nextIndex;
+  return options[nextIndex];
+};
+
+const syncProblemSuggestion = () => {
+  if (!ideaDiscipline || !ideaProblem) return;
+  ideaProblem.value = getRandomProblemSuggestion(ideaDiscipline.value);
 };
 
 const setGeneratedState = (isGenerated) => {
@@ -286,18 +351,26 @@ reveals.forEach((element) => observer.observe(element));
 if (ideaForm) {
   ideaForm.addEventListener("submit", async (event) => {
     event.preventDefault();
-    renderIdea(buildIdea(ideaDiscipline.value, ideaProblem.value));
+    setIdeaStatus("Generating a live idea...");
 
     try {
       await requestIdea();
     } catch (error) {
       const message =
         error instanceof Error ? error.message : "Unable to generate idea right now.";
-      setIdeaStatus(`${message} Showing the starter version instead.`);
+      setGeneratedState(false);
+      setIdeaStatus(message);
     }
   });
 }
 
+if (ideaDiscipline) {
+  ideaDiscipline.addEventListener("change", () => {
+    syncProblemSuggestion();
+  });
+}
+
+syncProblemSuggestion();
 setGeneratedState(false);
 setIdeaStatus("Local mode ready.");
 updateCountdown();

@@ -727,6 +727,12 @@ main {
   border-style: dashed;
 }
 
+.idea-output[data-state="placeholder"] .idea-pill-row,
+.idea-output[data-state="placeholder"] .idea-detail-grid,
+.idea-output[data-state="placeholder"] .idea-output-actions {
+  display: none;
+}
+
 .idea-output[data-state="placeholder"] .idea-output-actions {
   opacity: 0.72;
 }

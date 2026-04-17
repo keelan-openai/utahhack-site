@@ -1,6 +1,7 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
+const { execFile } = require("child_process");
 
 const rootDir = __dirname;
 const port = Number(process.env.PORT || 3000);
@@ -124,6 +125,55 @@ const getResponseText = (payload) => {
   return textParts.join("\n").trim();
 };
 
+const execFileAsync = (command, args, options = {}) =>
+  new Promise((resolve, reject) => {
+    execFile(command, args, options, (error, stdout, stderr) => {
+      if (error) {
+        reject(new Error(stderr || error.message));
+        return;
+      }
+
+      resolve(stdout);
+    });
+  });
+
+const createOpenAIBody = (model, promptInput) =>
+  JSON.stringify({
+    model,
+    reasoning: {
+      effort: "minimal",
+    },
+    input: promptInput,
+    text: {
+      format: {
+        type: "text",
+      },
+    },
+  });
+
+const fetchOpenAIWithCurl = async (apiKey, body) => {
+  const stdout = await execFileAsync(
+    "curl",
+    [
+      "-sS",
+      "--max-time",
+      "20",
+      "https://api.openai.com/v1/responses",
+      "-H",
+      `Authorization: Bearer ${apiKey}`,
+      "-H",
+      "Content-Type: application/json",
+      "-d",
+      body,
+    ],
+    {
+      maxBuffer: 1024 * 1024 * 4,
+    }
+  );
+
+  return JSON.parse(stdout);
+};
+
 const generateIdea = async ({
   discipline,
   problem,
@@ -148,33 +198,39 @@ Discipline: ${discipline}
 Problem: ${problem}
 Fallback idea for tone reference: ${JSON.stringify(fallbackIdea)}`;
 
-  const response = await fetch("https://api.openai.com/v1/responses", {
-    method: "POST",
-    signal: AbortSignal.timeout(20000),
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      model,
-      reasoning: {
-        effort: "minimal",
-      },
-      input: promptInput,
-      text: {
-        format: {
-          type: "text",
-        },
-      },
-    }),
-  });
+  const requestBody = createOpenAIBody(model, promptInput);
+  let payload;
 
-  const payload = await response.json();
+  try {
+    const response = await fetch("https://api.openai.com/v1/responses", {
+      method: "POST",
+      signal: AbortSignal.timeout(20000),
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: requestBody,
+    });
 
-  if (!response.ok) {
-    const message =
-      payload?.error?.message || "OpenAI request failed during local test.";
-    throw new Error(message);
+    payload = await response.json();
+
+    if (!response.ok) {
+      const message =
+        payload?.error?.message || "OpenAI request failed during local test.";
+      throw new Error(message);
+    }
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "";
+
+    if (!message.includes("ENOTFOUND") && !message.includes("fetch failed")) {
+      throw error;
+    }
+
+    payload = await fetchOpenAIWithCurl(apiKey, requestBody);
+
+    if (payload?.error) {
+      throw new Error(payload.error.message || "OpenAI curl fallback failed.");
+    }
   }
 
   const outputText = getResponseText(payload);
