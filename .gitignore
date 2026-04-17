@@ -1,4 +1,5 @@
 .vercel
 node_modules
 .DS_Store
+.env.local
 invited_emails_2026_04_16.csv

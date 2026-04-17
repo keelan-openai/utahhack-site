@@ -178,6 +178,111 @@
           </article>
         </section>
 
+        <section class="idea-lab-section" id="idea-lab">
+          <div class="idea-lab-copy">
+            <p class="section-kicker">Project Spark</p>
+            <h2>Generate a hackathon idea in under 30 seconds.</h2>
+            <p>
+              Pick your discipline and describe the problem you want to
+              improve. We will turn that into a focused project concept, a
+              matching track, and a practical first build plan.
+            </p>
+          </div>
+          <div class="idea-lab-shell">
+            <form class="idea-form" id="idea-form">
+              <label class="idea-field">
+                <span>Field</span>
+                <select id="idea-discipline" name="discipline">
+                  <option value="Higher Education">Higher Education</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="Research">Research</option>
+                  <option value="Business Operations">Business Operations</option>
+                  <option value="Creative Media">Creative Media</option>
+                  <option value="Community Services">Community Services</option>
+                </select>
+              </label>
+              <label class="idea-field idea-field-wide">
+                <span>Problem to improve</span>
+                <input
+                  id="idea-problem"
+                  name="problem"
+                  type="text"
+                  maxlength="120"
+                  value="Helping students find the right campus resources faster"
+                  placeholder="Example: Reducing advisor email overload"
+                />
+              </label>
+              <button class="primary-button idea-submit" type="submit">
+                Generate my idea
+              </button>
+              <p class="idea-status" id="idea-status" aria-live="polite">
+                Local mode ready.
+              </p>
+            </form>
+
+            <article class="idea-output" id="idea-output" aria-live="polite">
+              <div class="idea-output-head">
+                <p class="idea-overline" id="idea-overline">Ready when you are</p>
+                <h3 id="idea-title">Your project concept will appear here.</h3>
+                <p class="idea-summary" id="idea-summary">
+                  Choose a field, describe the problem, and generate a concept
+                  to get a track recommendation, a practical first build plan,
+                  and the minimum inputs you need to start.
+                </p>
+              </div>
+
+              <div class="idea-pill-row">
+                <span class="idea-pill idea-pill-placeholder" id="idea-track">Matching track</span>
+                <span class="idea-pill idea-pill-placeholder" id="idea-format">Working prototype</span>
+              </div>
+
+              <div class="idea-detail-grid">
+                <div class="idea-detail">
+                  <span>First 2 hours</span>
+                  <ul class="idea-list" id="idea-plan">
+                    <li>
+                      We will outline the first concrete steps so your team
+                      knows what to make first instead of staring at a blank
+                      page.
+                    </li>
+                  </ul>
+                </div>
+                <div class="idea-detail">
+                  <span>Minimum inputs</span>
+                  <ul class="idea-list" id="idea-inputs">
+                    <li>
+                      We will suggest the smallest set of documents, links,
+                      prompts, or data needed to make the demo credible.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="idea-output-actions">
+                <a class="secondary-button" href="#tracks">See matching track</a>
+              </div>
+            </article>
+          </div>
+
+          <details class="idea-debug" id="idea-debug">
+            <summary>Show model, prompt input, and raw output</summary>
+            <div class="idea-debug-grid">
+              <div class="idea-debug-block">
+                <span>Model</span>
+                <p id="idea-model">gpt-5-mini</p>
+              </div>
+              <div class="idea-debug-block">
+                <span>Prompt input</span>
+                <pre id="idea-debug-input">No generation yet.</pre>
+              </div>
+              <div class="idea-debug-block">
+                <span>Raw model output</span>
+                <pre id="idea-debug-output">No generation yet.</pre>
+              </div>
+            </div>
+          </details>
+        </section>
+
         <section class="tracks-section" id="tracks">
           <div class="section-heading">
             <p class="section-kicker">Challenge tracks</p>
