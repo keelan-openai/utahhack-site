@@ -206,7 +206,18 @@ const requestIdea = async () => {
     }),
   });
 
-  const payload = await response.json();
+  const rawText = await response.text();
+  let payload = null;
+
+  try {
+    payload = rawText ? JSON.parse(rawText) : {};
+  } catch {
+    if (!response.ok) {
+      throw new Error(`Idea endpoint returned ${response.status}.`);
+    }
+
+    throw new Error("Idea endpoint returned an invalid JSON response.");
+  }
 
   if (!response.ok) {
     throw new Error(payload.error || "Unable to generate idea right now.");
