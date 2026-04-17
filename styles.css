@@ -552,7 +552,8 @@ main {
 .office-hours-section,
 .schedule-section,
 .faq-section,
-.principles-section {
+.principles-section,
+.resource-section {
   padding: 1rem 0 5rem;
 }
 
@@ -666,6 +667,51 @@ main {
   height: 1180px;
   border: 0;
   background: white;
+}
+
+.resource-card {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid rgba(24, 19, 18, 0.08);
+  background: var(--panel);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow);
+}
+
+.resource-block + .resource-block {
+  margin-top: 1.2rem;
+}
+
+.resource-block span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.resource-block strong,
+.resource-block code {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.resource-block a {
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+.resource-block code {
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+  background: rgba(24, 19, 18, 0.06);
+  border: 1px solid rgba(24, 19, 18, 0.08);
 }
 
 .schedule-grid {
@@ -902,6 +948,7 @@ main {
   .gallery-section,
   .register-section,
   .submission-embed-section,
+  .resource-section,
   .office-hours-section,
   .tracks-section,
   .schedule-section,
@@ -937,6 +984,7 @@ main {
   .story-card,
   .register-panel,
   .info-rail,
+  .resource-card,
   .principles-grid article {
     padding: 1.4rem;
   }
