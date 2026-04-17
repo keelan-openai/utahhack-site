@@ -998,6 +998,11 @@ main {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.judging-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  margin-bottom: 2rem;
+}
+
 .schedule-grid article {
   padding: 1.5rem;
   border-top: 2px solid var(--red);
