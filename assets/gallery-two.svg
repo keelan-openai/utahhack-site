@@ -1,0 +1,17 @@
+<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="520" rx="34" fill="#BE1E2D"/>
+  <rect x="40" y="40" width="440" height="440" rx="26" fill="#F9EFE2"/>
+  <rect x="82" y="86" width="162" height="130" rx="18" fill="#181312"/>
+  <text x="104" y="136" fill="#F3B562" font-family="Space Grotesk, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing=".18em">TEAM ONE</text>
+  <text x="104" y="176" fill="#FFF9F0" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">Idea</text>
+  <text x="104" y="208" fill="#FFF9F0" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">to prototype</text>
+  <rect x="274" y="170" width="164" height="128" rx="18" fill="#F3B562"/>
+  <text x="298" y="222" fill="#7A1A1A" font-family="Space Grotesk, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing=".18em">TEAM TWO</text>
+  <text x="298" y="260" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">Design</text>
+  <text x="298" y="292" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">to launch</text>
+  <path d="M142 292C178 332 208 352 258 360C308 368 352 352 390 326" stroke="#BE1E2D" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="138" cy="366" r="26" fill="#BE1E2D"/>
+  <circle cx="216" cy="394" r="26" fill="#181312"/>
+  <circle cx="294" cy="382" r="26" fill="#F3B562"/>
+  <circle cx="372" cy="394" r="26" fill="#FFF9F0" stroke="#181312" stroke-width="6"/>
+</svg>

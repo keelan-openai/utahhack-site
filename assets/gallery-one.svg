@@ -1,0 +1,11 @@
+<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="520" rx="34" fill="#201717"/>
+  <rect x="32" y="32" width="836" height="456" rx="26" fill="#F1E3D2"/>
+  <circle cx="180" cy="174" r="94" fill="#BE1E2D"/>
+  <rect x="306" y="96" width="460" height="154" rx="24" fill="#FFF9F0"/>
+  <text x="340" y="150" fill="#BE1E2D" font-family="Space Grotesk, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing=".18em">ROOM ENERGY</text>
+  <text x="340" y="200" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700">Mentors circulating.</text>
+  <text x="340" y="244" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700">Prompts on every screen.</text>
+  <rect x="94" y="310" width="682" height="110" rx="20" fill="#F3B562"/>
+  <text x="126" y="374" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">Fast collaboration beats perfect planning.</text>
+</svg>

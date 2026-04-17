@@ -1,0 +1,7 @@
+<svg width="220" height="56" viewBox="0 0 220 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="56" rx="28" fill="#fff7ee"/>
+  <rect x="4" y="4" width="212" height="48" rx="24" stroke="#BE1E2D" stroke-opacity=".18"/>
+  <path d="M31.4 18h7.7v11.6c0 5 2.2 7.6 6.4 7.6s6.4-2.6 6.4-7.6V18h7.7v12.2c0 9.8-5.6 14.7-14.2 14.7-8.4 0-14-4.9-14-14.7V18Z" fill="#BE1E2D"/>
+  <text x="75" y="25" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing=".16em">UNIVERSITY OF UTAH</text>
+  <text x="75" y="39" fill="#5E514E" font-family="Space Grotesk, Arial, sans-serif" font-size="11">Student Hackathon</text>
+</svg>

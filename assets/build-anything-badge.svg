@@ -1,0 +1,7 @@
+<svg width="192" height="56" viewBox="0 0 192 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="56" rx="28" fill="#F3B562"/>
+  <path d="M28 16h18v24H28z" fill="#BE1E2D"/>
+  <path d="M35 16h4v24h-4z" fill="#fff7ee"/>
+  <text x="58" y="24" fill="#7A1A1A" font-family="Space Grotesk, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing=".18em">TOMORROW'S THEME</text>
+  <text x="58" y="39" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="15" font-weight="700">BUILD ANYTHING</text>
+</svg>

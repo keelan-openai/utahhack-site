@@ -1,0 +1,17 @@
+<svg width="460" height="360" viewBox="0 0 460 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="460" height="360" rx="34" fill="#FFF8EE"/>
+  <rect x="30" y="30" width="400" height="300" rx="24" fill="#F5E7D6"/>
+  <rect x="62" y="58" width="140" height="112" rx="18" fill="#BE1E2D"/>
+  <text x="84" y="112" fill="#FFF8EE" font-family="Space Grotesk, Arial, sans-serif" font-size="18" font-weight="700">START</text>
+  <text x="84" y="138" fill="#FFF8EE" font-family="Space Grotesk, Arial, sans-serif" font-size="18" font-weight="700">WITH A</text>
+  <text x="84" y="164" fill="#FFF8EE" font-family="Space Grotesk, Arial, sans-serif" font-size="18" font-weight="700">PROMPT</text>
+  <rect x="226" y="58" width="172" height="112" rx="18" fill="#181312"/>
+  <text x="248" y="100" fill="#F3B562" font-family="Space Grotesk, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing=".16em">THEN SHIP</text>
+  <text x="248" y="132" fill="#FFF8EE" font-family="Space Grotesk, Arial, sans-serif" font-size="30" font-weight="700">a real</text>
+  <text x="248" y="164" fill="#FFF8EE" font-family="Space Grotesk, Arial, sans-serif" font-size="30" font-weight="700">prototype</text>
+  <path d="M62 224C120 206 160 204 214 224C268 244 314 256 398 212" stroke="#BE1E2D" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="102" cy="252" r="18" fill="#F3B562"/>
+  <circle cx="180" cy="266" r="18" fill="#181312"/>
+  <circle cx="258" cy="240" r="18" fill="#BE1E2D"/>
+  <circle cx="336" cy="258" r="18" fill="#FFF8EE" stroke="#181312" stroke-width="6"/>
+</svg>

@@ -1,0 +1,4 @@
+.vercel
+node_modules
+.DS_Store
+invited_emails_2026_04_16.csv

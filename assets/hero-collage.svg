@@ -1,0 +1,29 @@
+<svg width="780" height="900" viewBox="0 0 780 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="780" height="900" rx="38" fill="#261B1B"/>
+  <rect x="36" y="36" width="708" height="828" rx="28" fill="url(#paint0_linear)"/>
+  <rect x="74" y="82" width="280" height="220" rx="22" fill="#FFF4E8"/>
+  <text x="106" y="154" fill="#BE1E2D" font-family="Space Grotesk, Arial, sans-serif" font-size="28" font-weight="700">UU HACK</text>
+  <text x="106" y="210" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="56" font-weight="700">Build</text>
+  <text x="106" y="270" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="56" font-weight="700">Anything</text>
+  <circle cx="544" cy="198" r="112" fill="#BE1E2D"/>
+  <path d="M498 147h92l52 51-52 51h-92l52-51-52-51Zm57 26-26 25 26 25h24l26-25-26-25h-24Z" fill="#F4E3D3"/>
+  <rect x="74" y="344" width="632" height="194" rx="28" fill="#FFF9F0"/>
+  <text x="108" y="400" fill="#7A1A1A" font-family="Space Grotesk, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing=".2em">IDEA BOARD</text>
+  <text x="108" y="450" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="26" font-weight="700">apps • tools • games • art • research • systems</text>
+  <path d="M108 484C182 518 234 530 298 518C362 506 428 466 498 470C568 474 606 514 670 526" stroke="#BE1E2D" stroke-width="8" stroke-linecap="round"/>
+  <rect x="74" y="582" width="290" height="226" rx="26" fill="#F3B562"/>
+  <rect x="398" y="582" width="308" height="226" rx="26" fill="#2E2020"/>
+  <text x="106" y="648" fill="#7A1A1A" font-family="Space Grotesk, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing=".18em">FAST LOOP</text>
+  <text x="106" y="708" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700">Prompt</text>
+  <text x="106" y="754" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700">Build</text>
+  <text x="106" y="800" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="42" font-weight="700">Demo</text>
+  <text x="432" y="652" fill="#F3B562" font-family="Space Grotesk, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing=".18em">FINAL HOURS</text>
+  <text x="432" y="712" fill="#FFF9F0" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="700">University of Utah</text>
+  <text x="432" y="756" fill="#FFF9F0" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="700">Hackathon 2026</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="80" y1="54" x2="688" y2="838" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2E4D3"/>
+      <stop offset="1" stop-color="#EBD8C1"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="520" height="520" viewBox="0 0 520 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="520" rx="34" fill="#181312"/>
+  <rect x="36" y="36" width="448" height="448" rx="26" fill="#2C2020"/>
+  <rect x="80" y="86" width="360" height="130" rx="22" fill="#FFF9F0"/>
+  <text x="106" y="138" fill="#BE1E2D" font-family="Space Grotesk, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing=".18em">DEMO NIGHT</text>
+  <text x="106" y="182" fill="#181312" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700">Show the thing.</text>
+  <path d="M98 294L170 248L244 314L330 232L408 306" stroke="#F3B562" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="170" cy="248" r="12" fill="#BE1E2D"/>
+  <circle cx="244" cy="314" r="12" fill="#FFF9F0"/>
+  <circle cx="330" cy="232" r="12" fill="#BE1E2D"/>
+  <rect x="98" y="360" width="312" height="58" rx="18" fill="#BE1E2D"/>
+  <text x="126" y="397" fill="#FFF9F0" font-family="Space Grotesk, Arial, sans-serif" font-size="24" font-weight="700">Strong story wins rooms.</text>
+</svg>

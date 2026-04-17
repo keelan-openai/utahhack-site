@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 180) rotate(52) scale(920 1040)">
+      <stop offset="0" stop-color="#2C74D4"/>
+      <stop offset="1" stop-color="#4F9AA3"/>
+    </radialGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1030 180) rotate(90) scale(280)">
+      <stop stop-color="#92F1F2" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#92F1F2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(150 1080) rotate(90) scale(220)">
+      <stop stop-color="#64E6EA" stop-opacity="0.46"/>
+      <stop offset="1" stop-color="#64E6EA" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1020 1180) rotate(90) scale(190)">
+      <stop stop-color="#95EDED" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#95EDED" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="270" y="392" width="660" height="700" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="20"/>
+      <feGaussianBlur stdDeviation="24"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.07 0 0 0 0 0.17 0 0 0 0 0.22 0 0 0 0.18 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2" result="shape"/>
+    </filter>
+  </defs>
+  <rect x="50" y="50" width="1100" height="1300" rx="52" fill="url(#bgA)"/>
+  <rect x="50" y="50" width="1100" height="1300" rx="52" fill="#0E1C21" fill-opacity="0.15"/>
+  <circle cx="1030" cy="180" r="280" fill="url(#glow1)"/>
+  <circle cx="150" cy="1080" r="220" fill="url(#glow2)"/>
+  <circle cx="1020" cy="1180" r="190" fill="url(#glow3)"/>
+  <text x="600" y="215" fill="white" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="68" font-weight="700">University of Utah x OpenAI</text>
+  <text x="600" y="300" fill="white" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="68" font-weight="700">Hackathon Submission</text>
+  <text x="600" y="372" fill="rgba(255,255,255,0.88)" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="32" font-weight="500">Scan to open the final project form</text>
+  <g filter="url(#shadow)">
+    <rect x="318" y="420" width="564" height="564" rx="32" fill="white"/>
+    <image href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNDAiIGhlaWdodD0iMzQwIiB2aWV3Qm94PSIwIDAgNDcgNDciIHNoYXBlLXJlbmRlcmluZz0iY3Jpc3BFZGdlcyI+PHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTAgMGg0N3Y0N0gweiIvPjxwYXRoIHN0cm9rZT0iIzAwMDAwMCIgZD0iTTEgMS41aDdtNCAwaDFtMSAwaDFtMSAwaDFtMiAwaDJtMSAwaDJtMiAwaDFtMSAwaDdtMiAwaDFtMSAwaDdNMSAyLjVoMW01IDBoMW0yIDBoMW01IDBoMW0xIDBoM20xIDBoNG0xIDBoM20yIDBoMW0zIDBoMW0yIDBoMW01IDBoMU0xIDMuNWgxbTEgMGgzbTEgMGgxbTEgMGgxbTIgMGgzbTEgMGgxbTEgMGgxbTIgMGgybTEgMGgxbTMgMGgxbTIgMGgxbTEgMGgybTEgMGgxbTIgMGgxbTEgMGgzbTEgMGgxTTEgNC41aDFtMSAwaDNtMSAwaDFtMSAwaDRtMyAwaDFtMiAwaDNtMSAwaDJtMiAwaDFtMyAwaDJtMyAwaDJtMSAwaDFtMSAwaDNtMSAwaDFNMSA1LjVoMW0xIDBoM20xIDBoMW0xIDBoMW0yIDBoMW0xIDBoM20zIDBoN20yIDBoNG0yIDBoM20xIDBoMW0xIDBoM20xIDBoMU0xIDYuNWgxbTUgMGgxbTEgMGgxbTIgMGg2bTEgMGgxbTEgMGgxbTMgMGgxbTEgMGgxbTEgMGgybTEgMGgxbTYgMGgxbTUgMGgxTTEgNy41aDdtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDdNOSA4LjVoNW00IDBoNG0zIDBoNm0yIDBoMW0yIDBoMk0xIDkuNWgxbTEgMGg1bTUgMGgybTEgMGgxbTIgMGgxbTEgMGg1bTEgMGgybTEgMGgybTIgMGgxbTIgMGgxbTEgMGg1TTQgMTAuNWgxbTMgMGgxbTEgMGgybTMgMGg5bTEgMGgybTMgMGgybTEgMGgxbTIgMGgybTMgMGgybTEgMGgyTTEgMTEuNWgzbTEgMGgxbTEgMGgxbTMgMGgxbTEgMGg1bTEgMGgxbTIgMGgxbTEgMGgxbTIgMGgxbTMgMGgxbTIgMGgybTEgMGg0bTEgMGgxbTEgMGgxTTMgMTIuNWgxbTYgMGgxbTMgMGgzbTEgMGgxbTEgMGgybTUgMGgxbTEgMGgybTEgMGgzbTIgMGgybTIgMGgzTTIgMTMuNWgxbTEgMGgxbTIgMGgxbTEgMGgybTEgMGgzbTIgMGgxbTEgMGgxbTEgMGgybTEgMGgxbTExIDBoMm0xIDBoMW01IDBoMU0yIDE0LjVoNW00IDBoMm0xIDBoM20zIDBoM20zIDBoMW0yIDBoM20xIDBoMW0yIDBoM20yIDBoMm0yIDBoMU0xIDE1LjVoMm0yIDBoMW0xIDBoMW0yIDBoMW0xIDBoM20yIDBoMW0yIDBoMm0yIDBoM20yIDBoMW00IDBoMW0yIDBoMW0zIDBoMm0xIDBoMU0yIDE2LjVoMm0xIDBoMW0yIDBoMm0xIDBoMW0xIDBoMW00IDBoMW0xIDBoMW0xIDBoMW01IDBoMW0xIDBoMW0yIDBoMW0xIDBoMW0xIDBoMm0zIDBoM00zIDE3LjVoMW0xIDBoM20yIDBoNW0xIDBoMW0xIDBoMm02IDBoMW0zIDBoMW0xIDBoMW0xIDBoMW00IDBoMW0zIDBoMW0xIDBoMU02IDE4LjVoMW0zIDBoMm0xIDBoNG0xIDBoMW0yIDBoMW0yIDBoMW00IDBoM20xIDBoMW0yIDBoMm00IDBoMk0xIDE5LjVoNG0xIDBoMm0xIDBoMW0yIDBoMW00IDBoMm0xIDBoOG00IDBoM20xIDBoMW0xIDBoM20xIDBoM00yIDIwLjVoMW0xIDBoMW0xIDBoMW0xIDBoMm00IDBoMW0zIDBoMW01IDBoNG0yIDBoMm0xIDBoMm0xIDBoMW0zIDBoMW0xIDBoM00xIDIxLjVoMW0xIDBoMTBtNSAwaDJtMSAwaDZtNSAwaDFtMiAwaDhtMiAwaDFNMSAyMi41aDNtMSAwaDFtMyAwaDJtMSAwaDNtMSAwaDFtMSAwaDFtMiAwaDFtMyAwaDFtNCAwaDRtMiAwaDJtMyAwaDNtMSAwaDFNMSAyMy41aDFtMSAwaDNtMSAwaDFtMSAwaDFtNSAwaDFtMiAwaDFtMiAwaDFtMSAwaDFtMSAwaDFtMiAwaDFtMSAwaDJtMyAwaDNtMSAwaDFtMSAwaDFtMSAwaDFNMSAyNC41aDJtMSAwaDJtMyAwaDJtMyAwaDJtMSAwaDFtMyAwaDFtMyAwaDFtMiAwaDJtMSAwaDFtMyAwaDFtMSAwaDFtMyAwaDNNNSAyNS41aDVtMSAwaDJtMyAwaDNtMiAwaDdtNCAwaDFtMiAwaDhtMSAwaDFNMiAyNi41aDFtMSAwaDJtNCAwaDNtMiAwaDJtMiAwaDVtMiAwaDFtMSAwaDFtMSAwaDNtMyAwaDFtMiAwaDFtMiAwaDJtMSAwaDFNMyAyNy41aDFtMSAwaDFtMSAwaDFtMiAwaDFtMSAwaDFtMiAwaDJtMiAwaDFtMiAwaDJtMyAwaDFtMSAwaDFtMiAwaDVtMSAwaDFtMyAwaDNNMSAyOC41aDRtMSAwaDFtMyAwaDFtMSAwaDNtMiAwaDFtMiAwaDFtNCAwaDdtMSAwaDFtMSAwaDJtMiAwaDJtMiAwaDJNMyAyOS41aDFtMSAwaDRtMiAwaDFtMiAwaDFtMSAwaDFtMSAwaDJtMSAwaDFtMiAwaDRtMyAwaDJtMSAwaDFtMiAwaDFtMSAwaDFtMSAwaDFNNiAzMC41aDFtMyAwaDJtMSAwaDFtMSAwaDVtNCAwaDFtMSAwaDFtMSAwaDZtMiAwaDJtMSAwaDFtMiAwaDJtMSAwaDFNMSAzMS41aDFtNSAwaDNtMiAwaDFtMSAwaDFtMSAwaDNtMiAwaDJtMSAwaDNtMyAwaDJtOCAwaDFtMyAwaDFNMSAzMi41aDRtMSAwaDFtMSAwaDFtMiAwaDFtMyAwaDVtMiAwaDJtMSAwaDFtMyAwaDJtMiAwaDJtMSAwaDFtMiAwaDJtMSAwaDJtMSAwaDFNMSAzMy41aDFtMyAwaDNtNCAwaDdtNSAwaDJtMiAwaDFtMSAwaDFtOSAwaDJtMSAwaDJNNCAzNC41aDFtMSAwaDFtMSAwaDFtMiAwaDJtMiAwaDFtMiAwaDFtMiAwaDFtMyAwaDJtMSAwaDFtMSAwaDRtMyAwaDJtMyAwaDRNNSAzNS41aDFtMSAwaDNtMSAwaDRtMSAwaDFtMSAwaDJtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtNCAwaDFtMSAwaDNtMSAwaDNNMiAzNi41aDRtMyAwaDNtMSAwaDFtMSAwaDFtMiAwaDFtMiAwaDdtNCAwaDNtMSAwaDJtNCAwaDJNMSAzNy41aDFtMiAwaDJtMSAwaDJtMiAwaDJtMiAwaDJtMiAwaDFtMSAwaDVtMSAwaDFtNCAwaDFtMSAwaDFtMiAwaDVNOSAzOC41aDFtMSAwaDJtMSAwaDhtMyAwaDNtMiAwaDNtMSAwaDFtMSAwaDJtMyAwaDNtMSAwaDFNMSAzOS41aDdtNCAwaDFtMiAwaDFtMiAwaDJtMSAwaDFtMSAwaDFtMSAwaDFtMiAwaDFtMSAwaDRtMSAwaDNtMSAwaDFtMSAwaDFtMSAwaDJNMSA0MC41aDFtNSAwaDFtMSAwaDJtMyAwaDFtMiAwaDFtMSAwaDNtMyAwaDVtNCAwaDFtMSAwaDJtMyAwaDVNMSA0MS41aDFtMSAwaDNtMSAwaDFtMSAwaDFtMSAwaDZtNCAwaDdtNCAwaDFtMiAwaDhtMSAwaDJNMSA0Mi41aDFtMSAwaDNtMSAwaDFtMSAwaDRtMSAwaDZtMSAwaDFtMSAwaDFtMiAwaDFtMiAwaDRtMyAwaDFtMiAwaDFtMSAwaDJtMSAwaDJNMSA0My41aDFtMSAwaDNtMSAwaDFtMSAwaDFtMSAwaDFtMiAwaDJtMiAwaDFtMiAwaDJtMSAwaDFtMiAwaDFtNCAwaDJtMSAwaDFtMSAwaDFtNCAwaDFtMSAwaDFNMSA0NC41aDFtNSAwaDFtMiAwaDNtMSAwaDJtNCAwaDJtMSAwaDFtMSAwaDFtMiAwaDNtMiAwaDJtMSAwaDNtMSAwaDJtMSAwaDFNMSA0NS41aDdtMSAwaDFtMyAwaDFtMSAwaDFtMSAwaDJtMSAwaDFtMiAwaDNtNCAwaDFtMSAwaDFtMiAwaDJtMSAwaDNtMSAwaDFtMSAwaDEiLz48L3N2Zz4K" x="372" y="474" width="456" height="456" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+</svg>
